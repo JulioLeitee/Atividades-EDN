@@ -11,7 +11,10 @@ while True:
 
         tem_numero = False
         for caractere in senha:
-    
+            if caractere.isdigit():
+                tem_numero = True
+                break
+        
         if tem_numero == False:
             raise Exception("A Senha deve conter pelo menos um número")
         
